@@ -73,7 +73,7 @@ function draw() {
     drawMsg();
 
   } else if (curTab == "about") {
-    
+
 
 
     if (filling) {
@@ -291,7 +291,10 @@ function drawAbout() {
   push();
   textSize(42);
   textAlign(CENTER, CENTER);
+  textSize(18)
   text("hold down A", 200, 100);
+  let text1 = "In the 1920s, lavender was a slang to imply gay men, then later lesbian women. But in the 1940s-1950s, in the US, there was historical event called the lavender scare, which was a witch hunt against queer goverment workers. Since then it has been a symbol of empowerment, remembrance, and resistance in queer communities."
+  text(text1, 50, 280, 700, 300);
   pop();
 }
 
@@ -312,7 +315,7 @@ function drawPfp() {
   } else if (curPic == "4") {
     image(img4, 130, 81.25, 194, 121.25);
   }
-  
+
   //button selection
   circle(110, 231.25, 40);
   circle(110, 262.5, 40);
@@ -330,7 +333,7 @@ function drawPfp() {
 
   //tweets
   rect(180, 212.5, 560, 225, 10)
-  image(img6, 380, 320, 400, 200);
+  image(img6, 450, 325, 600, 230);
 
   pop();
 }
