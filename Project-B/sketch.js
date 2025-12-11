@@ -28,6 +28,9 @@ function preload() {
   img4 = loadImage("assets/hachi.jpeg");
   img5 = loadImage("assets/pot.png");
   img6 = loadImage("assets/twit3.png");
+  img7 = loadImage("assets/twit6.png");
+   img8 = loadImage("assets/twit7.png");
+    img9 = loadImage("assets/twit4.png");
 }
 
 function setup() {
@@ -315,6 +318,15 @@ function drawPfp() {
   } else if (curPic == "4") {
     image(img4, 130, 81.25, 194, 121.25);
   }
+  if (curPic == "1") {
+    image(img6, 450, 325, 600, 230);
+  } else if (curPic == "2") {
+    image(img7, 450, 325, 600, 230);
+  } else if (curPic == "3") {
+    image(img8, 450, 325, 600, 230);
+  } else if (curPic == "4") {
+    image(img9, 450, 325, 600, 230);
+  }
 
   //button selection
   circle(110, 231.25, 40);
@@ -332,8 +344,8 @@ function drawPfp() {
   text(tb3, 348, 158.75, 416, 125);
 
   //tweets
-  rect(180, 212.5, 560, 225, 10)
-  image(img6, 450, 325, 600, 230);
+  //rect(180, 212.5, 560, 225, 10)
+  // image(img6, 450, 325, 600, 230);
 
   pop();
 }
